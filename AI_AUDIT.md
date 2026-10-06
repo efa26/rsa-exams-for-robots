@@ -31,7 +31,7 @@ _Role is one of: Reviewer, Archaeologist, Student Researcher, Reproducibility Ch
 
 | **#** | **Date** | **Role** | **What the AI claimed or produced (short quote or summary)** | **Category** | **Verified? (yes / no / partially)** | **How you checked it (source, test, experiment)** | **Team member** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 |  |  |  |  |  |  |  |
+| 1 | 10/04 | Reviewer | [AI review](https://chatgpt.com/share/6ac2bd1d-4d94-83ea-bb99-2e3ed2950326) of AICrypto paper, for "AI Disagreement Table" | OC | yes | source | Nicholas Krustchinsky |
 | 2 |  |  |  |  |  |  |  |
 | 3 |  |  |  |  |  |  |  |
 | 4 |  |  |  |  |  |  |  |
