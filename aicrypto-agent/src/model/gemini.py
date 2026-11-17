@@ -1,7 +1,9 @@
 from google import genai
 from google.genai import types
 import os
+import dotenv
 from typing import Dict, Any
+dotenv.load_dotenv()
 
 from src.model.base_model import BaseModel
 
@@ -15,11 +17,11 @@ class GeminiReasoningModel(BaseModel):
         
     def init_client(self):
         if self.client_type == 'google':
-            self.client = genai.Client(
-                vertexai=True,
-                project="nova-gemini-250604",
-                location="global"
-                )
+            api_key = os.getenv("GEMINI_API_KEY")
+            if not api_key:
+                raise ValueError("GEMINI_API_KEY not set in .env")
+
+            self.client = genai.Client(api_key = api_key)
         else:
             raise ValueError(f"Invalid client type: {self.client_type}")    
     
