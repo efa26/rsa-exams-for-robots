@@ -213,3 +213,7 @@ __marimo__/
 #  tests for ai take a lot of space
 #  better to install seperately i feel
 data/
+
+# project outputs
+#  basically it is clutter for git
+outputs/
